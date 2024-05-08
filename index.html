@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main CSS File -->
+    <link rel="stylesheet" href="css.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Italianno&family=Open+Sans:wght@400;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <title>test API</title>
+</head>
+<body>
+    <div class="container">
+        <!-- City Name + Data -->
+        <section>
+            <!-- City Name  -->
+            <h1 id="city-name">
+                حلب
+            </h1>
+            <!-- Data -->
+            <h3 id="data">
+                الجمعة - 24 - نوفمبر
+            </h3>
+            <!-- Line  -->
+            <!-- <hr> -->
+        </section>
+        <!--// City Name + Data //-->
+        <!-- Prayer Timings -->
+        <section class="prayer-timings">
+            <!-- All Prayer Timings -->
+            <div class="cards">
+                <div class="card">
+                    <div id="prayer-name">
+                        الفجر
+                    </div>
+                    <div id="prayer-time" class="Fajr">
+                        05:12
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prayer-name">
+                        الشروق
+                    </div>
+                    <div id="prayer-time" class="Sunrise">
+                        12:40
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prayer-name">
+                        الظهر
+                    </div>
+                    <div id="prayer-time" class="Dhuhr">
+                        04:12
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prayer-name">
+                        العصر
+                    </div>
+                    <div id="prayer-time" class="Asr">
+                        04:12
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prayer-name">
+                        المغرب
+                    </div>
+                    <div id="prayer-time" class="Sunset">
+                        04:12
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prayer-name">
+                        العشاء
+                    </div>
+                    <div id="prayer-time" class="Isha">
+                        04:12
+                    </div>
+                </div>
+            </div>
+            <!--// All Prayer Timings //-->
+            <select id="city-selector">
+            </select>
+        </section>
+        <!--// Prayer Timings //-->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
